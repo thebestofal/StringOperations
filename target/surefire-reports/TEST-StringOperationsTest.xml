@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="StringOperationsTest" time="0.129" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="StringOperationsTest" time="0.137" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\Marek\AppData\Local\Temp\surefire11319920833352590423\surefirebooter6723396506374372169.jar C:\Users\Marek\AppData\Local\Temp\surefire11319920833352590423 2020-03-16T13-34-21_119-jvmRun1 surefire4679793409257709412tmp surefire_03453318651891040845tmp"/>
+    <property name="sun.java.command" value="C:\Users\Marek\AppData\Local\Temp\surefire3257459167564684475\surefirebooter18273332749845248976.jar C:\Users\Marek\AppData\Local\Temp\surefire3257459167564684475 2020-03-16T16-23-32_601-jvmRun1 surefire1125042307197799493tmp surefire_05551132007222293059tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Marek\Desktop\studia\Rok III\TestowanieJava\lab5\zadanie\target\test-classes;C:\Users\Marek\Desktop\studia\Rok III\TestowanieJava\lab5\zadanie\target\classes;C:\Users\Marek\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\Marek\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Marek\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;C:\Users\Marek\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\Marek\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Marek\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Marek\AppData\Local\Temp\surefire11319920833352590423\surefirebooter6723396506374372169.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Marek\AppData\Local\Temp\surefire3257459167564684475\surefirebooter18273332749845248976.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13.0.2+8"/>
@@ -56,5 +56,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="reverse_StringPassed_ReturnReverse" classname="StringOperationsTest" time="0.032"/>
+  <testcase name="isPalindrome_NotPalindormeString_ReturnFalse" classname="StringOperationsTest" time="0.056"/>
+  <testcase name="reverse_NullString_ThrowsException" classname="StringOperationsTest" time="0.005"/>
+  <testcase name="concat_FirstStringEmpty_ReturnNull" classname="StringOperationsTest" time="0.009"/>
+  <testcase name="reverse_StringPassed_ReturnReverse" classname="StringOperationsTest" time="0.003"/>
+  <testcase name="concat_SecondStringisNull_ReturnSecondString" classname="StringOperationsTest" time="0.001"/>
+  <testcase name="isPalindrome_Number_ReturnTrue" classname="StringOperationsTest" time="0.002"/>
+  <testcase name="isPalindrome_LongStringEven_ReturnTrue" classname="StringOperationsTest" time="0.001"/>
+  <testcase name="isPalindrome_NullString_ThrowsException" classname="StringOperationsTest" time="0.002"/>
+  <testcase name="reverse_CharPassed_ReturnSameChar" classname="StringOperationsTest" time="0.001"/>
+  <testcase name="concat_TwoStringsPassed_ReturnConcatenated" classname="StringOperationsTest" time="0.001"/>
+  <testcase name="isPalindrome_TwoSameChars_ReturnTrue" classname="StringOperationsTest" time="0"/>
+  <testcase name="reverse_StringWithSpecialSignPassed_ReturnReverse" classname="StringOperationsTest" time="0.001"/>
+  <testcase name="isPalindrome_4CharsStringEven_ReturnTrue" classname="StringOperationsTest" time="0"/>
+  <testcase name="concat_FirstStringisNull_ReturnSecondString" classname="StringOperationsTest" time="0.003"/>
+  <testcase name="isPalindrome_3CharsStringOdd_ReturnTrue" classname="StringOperationsTest" time="0.001"/>
+  <testcase name="isPalindrome_SingleChar_ReturnTrue" classname="StringOperationsTest" time="0.002"/>
 </testsuite>

@@ -35,8 +35,6 @@ public class StringOperations {
         if(!(a.charAt(0)+"").equals(a.charAt(a.length()-1)+"")){ //zmiana
             return false;
         }
-        else if(a.length() == 2) //zmiana
-            return true;
         return isPalindrome(a.substring(1, a.length()-1)); //zmiana
     }
     

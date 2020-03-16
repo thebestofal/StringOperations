@@ -16,26 +16,26 @@ import java.util.List;
     }
     
     public String concat(String a, String b) {
-<span class="nc" id="L19">        String retVal = null;</span>
-<span class="nc bnc" id="L20" title="All 4 branches missed.">        if (a != null &amp;&amp; a.length() &gt; 0) {</span>
-<span class="nc" id="L21">            StringBuilder sb = new StringBuilder();</span>
-<span class="nc" id="L22">            sb.append(a);</span>
-<span class="nc bnc" id="L23" title="All 2 branches missed.">            if (b != null) {</span>
-<span class="nc" id="L24">                sb.append(b);</span>
+<span class="fc" id="L19">        String retVal = null;</span>
+<span class="fc bfc" id="L20" title="All 4 branches covered.">        if (a != null &amp;&amp; a.length() &gt; 0) {</span>
+<span class="fc" id="L21">            StringBuilder sb = new StringBuilder();</span>
+<span class="fc" id="L22">            sb.append(a);</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">            if (b != null) {</span>
+<span class="fc" id="L24">                sb.append(b);</span>
             }
-<span class="nc" id="L26">            retVal = sb.toString();</span>
+<span class="fc" id="L26">            retVal = sb.toString();</span>
         }
-<span class="nc" id="L28">        return retVal;</span>
+<span class="fc" id="L28">        return retVal;</span>
     }
     
     public boolean isPalindrome(String a) {
-<span class="nc bnc" id="L32" title="All 2 branches missed.">        if(a.length()&lt;=1){</span>
-<span class="nc" id="L33">            return true;</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">        if(a.length()&lt;=1){</span>
+<span class="fc" id="L33">            return true;</span>
         }
-<span class="nc bnc" id="L35" title="All 2 branches missed.">        if(!(a.charAt(1)+&quot;&quot;).equals(a.charAt(a.length()-1)+&quot;&quot;)){</span>
-<span class="nc" id="L36">            return false;</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        if(!(a.charAt(0)+&quot;&quot;).equals(a.charAt(a.length()-1)+&quot;&quot;)){ //zmiana</span>
+<span class="fc" id="L36">            return false;</span>
         }
-<span class="nc" id="L38">        return isPalindrome(a.substring(1, a.length()-2));</span>
+<span class="fc" id="L38">        return isPalindrome(a.substring(1, a.length()-1)); //zmiana</span>
     }
     
 }

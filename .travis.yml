@@ -1,1 +1,4 @@
+env:
+  global:
+    -4f350ded2a929e90c829f3fea07a80137806f360f7c591f9e55320f5f8ba826e
 language: java
