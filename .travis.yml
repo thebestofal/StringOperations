@@ -1,10 +1,4 @@
-env:
-  global:
-    -4f350ded2a929e90c829f3fea07a80137806f360f7c591f9e55320f5f8ba826e
 language: java
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t b259db0d-b952-44a7-9414-7c2b4732dda8
