@@ -1,4 +1,13 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=f792c7b53296b4167e5e2746b9c1ea1aafbb594c2eddedcab2853292e024e681
 language: java
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -t b259db0d-b952-44a7-9414-7c2b4732dda8
+jdk:
+  - oraclejdk11
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+after_script:
+  - JACOCO_SOURCE_PATH=src/main/java ./cc-test-reporter format-coverage target/site/jacoco/jacoco.xml --input-type jacoco
+  - ./cc-test-reporter upload-coverage
