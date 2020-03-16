@@ -42,6 +42,13 @@ class StringOperationsTest
     }
     
     @Test
+    public void isPalindrome_4CharsStringEven_ReturnTrue()
+    {
+        String palindrom = "abba";
+        assertTrue(so.isPalindrome(palindrom));
+    }
+    
+    @Test
     public void isPalindrome_LongStringEven_ReturnTrue()
     {
         String palindrom = "abccba";
@@ -49,9 +56,10 @@ class StringOperationsTest
     }
     
     @Test
-    public void isPalindrome_LongStringOdd_ReturnTrue()
+    public void isPalindrome_3CharsStringOdd_ReturnTrue()
     {
-        String palindrom = "abcba";
+        String palindrom = "aba";
         assertTrue(so.isPalindrome(palindrom));
     }
+    
 }
